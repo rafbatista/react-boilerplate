@@ -9,5 +9,4 @@ const currentTime = () =>
     document.querySelector('#app')
   )
 
-setInterval(Welcome, 16)
 setInterval(currentTime, 16)
