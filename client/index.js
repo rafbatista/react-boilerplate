@@ -1,4 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
+import moment from 'moment'
 
-render(<div>Hi, welcom to React!</div>, document.querySelector('#app'))
+render(
+  <div>Hi, the current time is {moment().format('h:mm a')}</div>,
+  document.querySelector('#app')
+)
