@@ -2,9 +2,10 @@ import React from 'react'
 import { render } from 'react-dom'
 import moment from 'moment'
 
+const Welcome = props => <h1>Hi, the current time is {props.time}</h1>
 const currentTime = () =>
   render(
-    <div>Hi, the current time is {moment().format('h:mm:ssa')}</div>,
+    <Welcome time={moment().format('h:mm:ssa')} />,
     document.querySelector('#app')
   )
 
